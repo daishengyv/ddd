@@ -7,6 +7,8 @@
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
     <META NAME="Description" CONTENT="">
+    <meta name="viewport" content="user-scalable=no">
+
     <style>
         @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
         body {
@@ -730,6 +732,9 @@
                     systems[0].springForce = .01;
                     setUpEvents();
                     btn.style.display = "block";
+                    document.onclick = function (){
+                        box2.style.transform = "translateY(0)";
+                    };
                     break;
                 case 20:
                     sequenceDelay = 2000;
